@@ -1,0 +1,26 @@
+{
+  "id": "nodebb-widget-recent-topics",
+  "name": "NodeBB Recent Topics Widget",
+  "description": "NodeBB Widget that displays a recent topics",
+  "url": "https://github.com/ariastel/nodebb-widget-recent-topics",
+  "main": "./library.js",
+  "hooks": [
+    {
+      "hook": "static:app.load",
+      "method": "init"
+    },
+    {
+      "hook": "filter:widgets.getWidgets",
+      "method": "defineWidgets"
+    },
+    {
+      "hook": "filter:widget.render:aa_recenttopics",
+      "method": "renderRecentTopicsWidget"
+    }
+  ],
+  "less": [
+    "less/topic.less"
+  ],
+  "templates": "templates",
+  "languages": "languages"
+}
