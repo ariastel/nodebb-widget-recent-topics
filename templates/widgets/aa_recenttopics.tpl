@@ -1,6 +1,6 @@
 <div class="aa_recent-replies">
 	<ul id="aa_recent_topics" data-numtopics="{numTopics}" data-cid="{cid}">
-		<!-- IMPORT partials/topics.tpl -->
+		<!-- IMPORT partials/aa_recenttopics-item.tpl -->
 	</ul>
 	<a href="{relative_path}/recent" class="aa_recent_topics">[[recent-topics:more]]>></a>
 </div>
@@ -25,7 +25,7 @@
 						return;
 					}
 
-					app.parseAndTranslate('partials/topics', {
+					app.parseAndTranslate('partials/aa_recenttopics-item', {
 						relative_path: config.relative_path,
 						topics: [topic]
 					}, function (html) {
