@@ -1,5 +1,5 @@
 <!-- BEGIN topics -->
-<li data-pid="{topics.tid}" class="clearfix aa_widget-topic">
+<li data-pid="{topics.tid}" class="aa_widget-topic">
 	<div class="aa_widget-topic__header">
     <a href="<!-- IF topics.user.userslug -->{relative_path}/user/{topics.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.user.userslug -->" class="aa_widget-topic__author">
 
